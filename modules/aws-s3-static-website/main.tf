@@ -62,9 +62,6 @@ resource "aws_s3_bucket_policy" "web" {
         Resource = [
           "${aws_s3_bucket.web.arn}",
           "${aws_s3_bucket.web.arn}/*",
-        # Resource = [
-        #   aws_s3_bucket.web.arn,
-        #   "${aws_s3_bucket.web.arn}/*",
         ]
       },
     ]
